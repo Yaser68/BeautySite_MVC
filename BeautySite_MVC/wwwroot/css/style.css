@@ -7,15 +7,15 @@
 
 @font-face {
   font-family: shabnam;
-  src: url(font/Shabnam.ttf);
+  src: url(../font/Shabnam.ttf);
 }
 @font-face {
   font-family: Shabnam-Bold;
-  src: url(font/Shabnam-Bold.ttf);
+  src: url(../font/Shabnam-Bold.ttf);
 }
 @font-face {
   font-family: Yekan;
-  src: url(font/Yekan.ttf);
+  src: url(../font/Yekan.ttf);
 }
 /*-- style of banner Section : start --*/
 #banner {

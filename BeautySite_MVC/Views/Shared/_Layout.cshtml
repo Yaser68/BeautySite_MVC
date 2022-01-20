@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="keywords" content="حالت مو، نوبت آرایشگاه ، سالن زیبایی، استودیو مو، مدل موی زنانه، مدل مو جدید، "/>
 <meta name="description" content=" سالن زیبایی من">
     <title>استودیو مو |@ViewData["Title"] </title>
     <link type="text/css" rel="stylesheet" href="~/css/style.css">
@@ -22,11 +23,9 @@
 <div id="sideNav" >
   <nav>
     <ul>
-      <li> <a href="#banner">صفحه اصلی</a> </li>
-      <li> <a href="#Features">قابلیت ها</a> </li>
-      <li> <a href="#service">خدمات</a> </li>
-      <li> <a href="#testimonial">نظر مشتریان</a> </li>
-      <li> <a href="contact.html">تماس با ما</a> </li>
+      <li> <a href="@Url.Action("Index","Home")">صفحه اصلی</a> </li>
+     @RenderSection(name:"MenuList",required:false)
+      <li> <a href="@Url.Action("Contact","Home")">تماس با ما</a> </li>
 
     </ul>
   </nav>
