@@ -25,7 +25,7 @@
     <ul>
       <li> <a href="@Url.Action("Index","Home")">صفحه اصلی</a> </li>
      @RenderSection(name:"MenuList",required:false)
-      <li> <a href="@Url.Action("Contact","Home")">تماس با ما</a> </li>
+      <li> <a asp-controller="Home" asp-action="Contact">تماس با ما</a> </li>
 
     </ul>
   </nav>
