@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Service>
 
 @{
     ViewData["Title"] = "صفحه اصلی";
@@ -69,53 +69,22 @@
 
   <div class="serviceBox">
   
-    <div class="single-service">
-    <img src="~/photo/beauty2.jpeg" >
+        @foreach(var service in Model)
+        {
+           <div class="single-service">
+    <img src="~/photo/@service.Image" >
     <div class="overlay">
       <div class="service-description">
-        <h1>عنوان1</h1>
+        <h1>@service.Title</h1>
         <hr>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون </p>
+        <p>@service.Description </p>
       </div>
     
     </div>
-        </div>
+        </div> 
+        }
 
-  
-    <div class="single-service">
-<img src="~/photo/beauty1.jpeg" >
-<div class="overlay">
-  <div class="service-description">
-    <h1>عنوان2</h1>
-    <hr>
-    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون </p>
-  </div>
-
-</div>
-    </div>
-    
-    <div class="single-service">
-<img src="~/photo/beauty3.jpeg" >
-<div class="overlay">
-  <div class="service-description">
-    <h1>عنوان4</h1>
-    <hr>
-    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون </p>
-  </div>
-
-</div>
-    </div>
-    <div class="single-service">
-<img src="~/photo/beauty4.jpeg" >
-<div class="overlay">
-  <div class="service-description">
-    <h1>عنوان3</h1>
-    <hr>
-    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون </p>
-  </div>
-
-</div>
-    </div>
+ 
   </div>
   
 </section>
