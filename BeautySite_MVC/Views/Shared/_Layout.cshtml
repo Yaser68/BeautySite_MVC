@@ -1,48 +1,83 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BeautySite_MVC</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+<meta charset="utf-8">
+<meta name="description" content=" سالن زیبایی من">
+    <title>سالن زیبایی</title>
+    <link type="text/css" rel="stylesheet" href="~/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BeautySite_MVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - BeautySite_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+<body>
+
+  <div id="main-Div">
+
+
+@RenderBody()
+
+  <!-- Nav : شروع منوی کشویی **********-->
+<div id="sideNav" >
+  <nav>
+    <ul>
+      <li> <a href="#banner">صفحه اصلی</a> </li>
+      <li> <a href="#Features">قابلیت ها</a> </li>
+      <li> <a href="#service">خدمات</a> </li>
+      <li> <a href="#testimonial">نظر مشتریان</a> </li>
+      <li> <a href="contact.html">تماس با ما</a> </li>
+
+    </ul>
+  </nav>
+
+</div>
+
+<div id="menuBtn">
+  <img src="photo/menu.svg" id="menu">
+</div>
+
+<!-- باز و بسته شدن منوی کشویی با استفاده از جاوا اسکریپت -->
+<script>
+
+var menuBtn=document.getElementById("menuBtn")
+var menu=document.getElementById("menu")
+var sideNav=document.getElementById("sideNav")
+sideNav.style.right="-200px"
+
+menuBtn.onclick=function(){
+  if(sideNav.style.right=="-200px"){
+    sideNav.style.right="0"
+    menu.src="photo/closeMenu.svg";
+  }
+  else {
+    sideNav.style.right="-200px"
+    menu.src="photo/menu.svg";
+  }
+}
+
+</script>
+<!-- باز و بسته شدن منوی کشویی با استفاده از جاوا اسکریپت -->
+<!-- Nav :  پایان منوی کشویی********** -->
+
+
+
+<!-- FOOTER  :  شروع بخش -->
+<section id="footer">
+  <div><small class="copyright">طراحی شده توسط &copy; <a href=# target="_blank">یاسر محمدی پور</a></small></div>
+</section>
+<!-- FOOTER  :  پایان بخش -->
+
+<!--حرکت آرام بین صفحات با کلیک بر روی گزینه های منوی کشویی با استفاده از جاوا اسکریپت  -->
+<script>
+var scroll = new SmoothScroll('a[href*="#"]', {
+speed: 1000,
+speedAsDuration: true
+});
+</script>
+<!--حرکت آرام بین صفحات با کلیک بر روی گزینه های منوی کشویی با استفاده از جاوا اسکریپت  -->
+
+</div>
 </body>
+
 </html>

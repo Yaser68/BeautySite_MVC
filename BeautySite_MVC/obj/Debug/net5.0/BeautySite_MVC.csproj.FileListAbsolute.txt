@@ -23,7 +23,6 @@ C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Beaut
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\BeautySite_MVC.TagHelpers.output.cache
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\BeautySite_MVC.RazorCoreGenerate.cache
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -37,3 +36,4 @@ C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\ref\B
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\BeautySite_MVC.pdb
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\BeautySite_MVC.genruntimeconfig.cache
 C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\BeautySite_MVC.csproj.CopyComplete
+C:\Users\yaser\source\repos\BeautySite_MVC\BeautySite_MVC\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
