@@ -34,7 +34,7 @@
 </div>
 
 <div id="menuBtn">
-  <img src="photo/menu.svg" id="menu">
+  <img src="~/photo/menu.svg" id="menu">
 </div>
 
 <!-- باز و بسته شدن منوی کشویی با استفاده از جاوا اسکریپت -->
@@ -48,11 +48,11 @@ sideNav.style.right="-200px"
 menuBtn.onclick=function(){
   if(sideNav.style.right=="-200px"){
     sideNav.style.right="0"
-    menu.src="photo/closeMenu.svg";
+    menu.src="/photo/closeMenu.svg";
   }
   else {
     sideNav.style.right="-200px"
-    menu.src="photo/menu.svg";
+    menu.src="/photo/menu.svg";
   }
 }
 

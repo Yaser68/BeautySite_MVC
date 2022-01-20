@@ -18,10 +18,10 @@
   src: url(font/Yekan.ttf);
 }
 /*-- style of banner Section : start --*/
-#banner{
-    background: linear-gradient(rgba(0,0,0.2,0.2),#C69B75), url(photo/banner.jpeg);
+#banner {
+    background: linear-gradient(rgba(0,0,0.2,0.2),#C69B75), url(../photo/banner.jpeg);
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     height: 100vh;
 }
 .logo{
