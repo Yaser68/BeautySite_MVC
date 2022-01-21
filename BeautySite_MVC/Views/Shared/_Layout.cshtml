@@ -16,11 +16,14 @@
 
   <div id="main-Div">
 
+      @RenderBody()
 
-@RenderBody()
 
-  <!-- Nav : شروع منوی کشویی **********-->
-<div id="sideNav" >
+
+
+  <!-- Nav : :  شروع منوی کشویی **********-->
+
+ <div id="sideNav" >
   <nav>
     <ul>
       <li> <a href="@Url.Action("Index","Home")">صفحه اصلی</a> </li>
@@ -56,15 +59,19 @@ menuBtn.onclick=function(){
 }
 
 </script>
+
 <!-- باز و بسته شدن منوی کشویی با استفاده از جاوا اسکریپت -->
 <!-- Nav :  پایان منوی کشویی********** -->
 
 
 
+
+
+
 <!-- FOOTER  :  شروع بخش -->
-<section id="footer">
-  <div><small class="copyright">طراحی شده توسط &copy; <a href=# target="_blank">یاسر محمدی پور</a></small></div>
-</section>
+
+<partial name="Footer"/>
+
 <!-- FOOTER  :  پایان بخش -->
 
 <!--حرکت آرام بین صفحات با کلیک بر روی گزینه های منوی کشویی با استفاده از جاوا اسکریپت  -->
