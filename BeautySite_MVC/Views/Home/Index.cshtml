@@ -11,19 +11,7 @@
 
 
   <!-- HOME  :  شروع بنر صفحه اصلی-->
-  <section id="banner">
-<img class="logo" src="" alt="">
-<div class="banner-text">
-    <h1>استودیو مو</h1>
-    <p>حالت مو همان حالت زندگی ست</p>
-</div>
-
-<div class="banner-btn">
-    <a asp-controller="Home" asp-action="Contact"><span></span>درخواست مشاوره</a>
-    <a href="#service"><span></span>آشنایی با خدمات</a>
-</div>
-
-  </section>
+ <partial name="Banner" />
 <!-- HOME  :  پایان بنر صفحه اصلی -->
 
 <!-- FEATURES  :  شروع بخش-->
@@ -37,84 +25,12 @@
 
 
 <!-- SERVICES  :  شروع بخش -->
-<section id="service">
-  <div class="title-text">
-    <p>خدمات</p>
-    <h1>ما بهترش رو فراهم می کنیم</h1>
-  </div>
 
+@await Component.InvokeAsync("_projects")
 
-  <div class="serviceBox">
-  
-        @foreach(var service in Model)
-        {
-           <div class="single-service">
-    <img src="~/photo/@service.Image" >
-    <div class="overlay">
-      <div class="service-description">
-        <h1>@service.Title</h1>
-        <hr>
-        <p>@service.Description </p>
-      </div>
-    
-    </div>
-        </div> 
-        }
-
- 
-  </div>
-  
-</section>
 <!-- SERVICES  پایان بخش ب-->
 
 
 <!-- TESTIMONIAL  :  شروع بخش -->
-<section id="testimonial">
-  <div class="title-text">
-    <p>نظر مشتریان</p>
-    <h1>در مورد ما چه می گویند</h1>
-  </div>
-
-  <div class="testimonial-row">
-    <div class="testimonial-column">
-      <div class="user">
-        <div class="user-info">
-          <h4>سمیرا</h4>
-
-        </div>
-        <img src="~/photo/person1.jpg" >
-        
-      </div>
-
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و طراحان گرافیک است، چاپگرها و 
-          </p>
-    </div>
-
-    <div class="testimonial-column">
-      <div class="user">
-        <div class="user-info">
-          <h4>سحر</h4>
-
-        </div>
-        <img src="~/photo/person2.jpg" >
-        
-      </div>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، ولورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و  با استفاده از طراحان گرافیک است، چاپگرها و </p>
-    </div>
-
-    <div class="testimonial-column">
-      <div class="user">
-        <div class="user-info">
-          <h4>یاسر</h4>
-
-        </div>
-        <img src="~/photo/person3.jpeg" >
-       
-      </div>
-          <p>لورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و  ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
-    </div>
-
-  </div>
-
-</section>
+@await Component.InvokeAsync("_Testimonial")
 <!-- TESTIMONIAL  :  پایان بخش -->

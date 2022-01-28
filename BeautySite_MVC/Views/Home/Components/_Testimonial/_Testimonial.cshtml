@@ -1,0 +1,33 @@
+﻿
+@model List<Testimonial>
+
+<section id="testimonial">
+  <div class="title-text">
+    <p>نظر مشتریان</p>
+    <h1>در مورد ما چه می گویند</h1>
+  </div>
+
+  <div class="testimonial-row">
+
+      @foreach (var user in  Model)
+     {
+         <div class="testimonial-column">
+      <div class="user">
+        <div class="user-info">
+          <h4>@user.Title</h4>
+
+        </div>
+        <img src="~/photo/@user.Image" >
+        
+      </div>
+
+          <p>@user.Description 
+          </p>
+    </div>
+     }
+
+    
+
+  </div>
+
+</section>

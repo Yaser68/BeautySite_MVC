@@ -1,0 +1,31 @@
+﻿@model List<Service>
+
+
+<section id="service">
+  <div class="title-text">
+    <p>خدمات</p>
+    <h1>ما بهترش رو فراهم می کنیم</h1>
+  </div>
+
+
+  <div class="serviceBox">
+  
+        @foreach(var service in Model)
+        {
+           <div class="single-service">
+    <img src="~/photo/@service.Image" >
+    <div class="overlay">
+      <div class="service-description">
+        <h1>@service.Title</h1>
+        <hr>
+        <p>@service.Description </p>
+      </div>
+    
+    </div>
+        </div> 
+        }
+
+ 
+  </div>
+  
+</section>

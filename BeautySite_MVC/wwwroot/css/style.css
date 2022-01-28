@@ -438,7 +438,10 @@ input[type=text], select, textarea {
  
 
 }
-.ContactUs form{
+.ContactUs input{
+  grid-column: 3/6;
+}
+.ContactUs select {
   grid-column: 3/6;
 }
 .ContactUs-btn{
@@ -447,41 +450,44 @@ input[type=text], select, textarea {
   position: relative;
   text-align: center;
 }
-.ContactUs-btn a{
-  
-  text-decoration: none;
-  display: inline-block;
-  
-  padding:12px 15px;
-  color: gold;
-  
-  position: relative;
-  z-index:1;
-  transition: 0.5s;
- 
-  text-align: center;
+    .ContactUs-btn button {
+        background: none;
+        display: inline-block;
+        padding: 12px 15px;
+        color: gold;
+        position: relative;
+        z-index: 1;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    .ContactUs-btn span {
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: gold;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    .ContactUs-btn:hover span {
+        width: 100%;
+    }
+
+    .ContactUs-btn button:hover {
+        color: black;
+    }
+
+.submit{
+    padding:5px;
 }
-.ContactUs-btn span{
-  width: 0% ;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: gold;
-  z-index: -1;
-  transition: 0.5s;
-}
-.ContactUs-btn:hover span{
-  width: 100%;
-}
-.ContactUs-btn a:hover{
-  color: black;
-}
-.address{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  text-align: center;
+
+.address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 .address-left{
   grid-column: 1/2;
