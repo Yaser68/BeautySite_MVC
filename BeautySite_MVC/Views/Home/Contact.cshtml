@@ -1,4 +1,4 @@
-﻿
+﻿@model contact
 
 @{
          ViewData["Title"] = "تماس با ما";
@@ -12,11 +12,11 @@
   <div> <h1 class="text-contactUS">با ثبت درخواست مشاوره در اسرع وقت تماس خواهیم گرفت</h1></div>
   <div class="ContactUs">
     <form method="post" asp-action="contact">
-      <label for="fname"></label>
-      <input  type="text" id="fname" name="firstname" placeholder="نام و نام خانوادگی">
+    
+      <input  type="text" asp-for="firstname" placeholder="نام و نام خانوادگی">
   
-      <label for="tel"></label>
-      <input  type="text" id="tel" name="number" placeholder="شماره تماس">
+     
+      <input  type="text" asp-for="number" placeholder="شماره تماس">
 
       <label for="items"></label>
       <select class="select"  name="item" id="items">
@@ -52,4 +52,3 @@
     <p>09305088564</p>
   </div>
 </div>
-<!-- FEATURES  : پایان بخش-->

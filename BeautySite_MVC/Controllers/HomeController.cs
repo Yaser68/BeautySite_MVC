@@ -32,7 +32,8 @@ namespace BeautySite_MVC.Controllers
 
         public IActionResult Contact()
         {
-            return View();
+            var model = new contact();
+            return View(model);
         }
 
 
