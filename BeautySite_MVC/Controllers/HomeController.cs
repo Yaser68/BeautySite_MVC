@@ -36,6 +36,14 @@ namespace BeautySite_MVC.Controllers
         }
 
 
+        [HttpPost]
+        public void Contact(contact form)
+        {
+            var Name = form.firstname;
+            var Number = form.number;
+
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
